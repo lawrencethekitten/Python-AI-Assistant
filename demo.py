@@ -1,0 +1,56 @@
+import speech_recognition as sr
+import win32com.client as wincl
+from pyautogui import press, typewrite, hotkey
+import understanding,time,arduinocomm
+import speech_recognition as sr
+import win32com.client as wincl
+from pyautogui import press, typewrite, hotkey
+import os
+def say(text):
+    speak = wincl.Dispatch("SAPI.SpVoice")
+    print(text)
+    speak.Speak(text)
+def demo():
+    say("hi, I don't have a name since I am still in development, but I am capable of many things already.")
+    say('Also, if you have any name ideas please email me at: awright.thatonething@gmail.com')
+    say("I can play or pause music on command")
+    say(understanding.processor('play'))
+    time.sleep(5)
+    say(understanding.processor('pause'))
+    say("I can run commands from command prompt")
+    say(understanding.processor("run control.exe"))
+    say("I can tell you the current weather. Forecasts are coming soon.")
+    say(understanding.processor("weather"))
+    say("I can answer almost any question with the help of Wolfram Alpha.")
+    #say(understanding.processor("what is a b"))
+    say("I can tell jokes.")
+    say(understanding.processor("tell me a joke"))
+    say("If the Arduino is attached, I can make it light up while I transcribe what you said.")
+    arduinocomm.write('t')
+    say('I can also do a short and weird rap.')
+    say(understanding.processor("rap"))
+    say("I can now answer most non-information related questions intelligently.")
+    say("And I have a few Easter eggs myself.")
+    say(understanding.processor("how you doing"))
+    say("I can intelligently greet you when you greet me")
+    say("you say: Hello and I say")
+    say(understanding.processor('hi'))
+    say("I can type anything you tell me to")
+    say(understanding.processor("type typing demonstration. Hi mom (the CPU)"))
+    say("Don't be freaked out, but I do record everything you say to me if you let me. This file can be deleted at any time.")
+    say("For now it just rots there until an algorithm is punched in to decipher how someone talks")
+    say("I can search the web for anything you want.")
+    say(understanding.processor("search the web for python training courses"))
+    say("I can repeat what you say (unlike Siri)")
+    say("Repeat this now: peter piper picked a peck of pickled peppers")
+    say(understanding.processor("repeat this now peter piper picked a peck of pickled peppers"))
+    say("I sadly cannot answer questions intelligently yet though")
+    say(understanding.processor("how tall are you"))
+    say("I can't demo it right now, but I can sign you into your email account. Password and everything.")
+    say("and for a grand finale, I can do something that no other AI can do.")
+    say("All you have to do is say to me: go to sleep, and I will put your computer to sleep!")
+    say('Here, since you are new to this, I will pull up a cheet sheet of commands you can use.')
+    os.startfile('cheetsheet.txt')
+    say("Have fun with me and don't forget to report any bugs or improvements to awright.thatonething@gmail.com.")
+    time.sleep(5)
+demo()

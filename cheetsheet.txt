@@ -1,0 +1,24 @@
+***************************************
+Cheat Sheet of Commands and Easter Eggs
+***************************************
+
+-Greet me with any common English greeting and I will greet you back.
+-Ask what time it is
+-Ask the weather (forecasts still in development) and I'll get it from DarkSky
+-Ask me to sign you in (if you allowed me to do so)
+-Ask me about Siri
+-Ask me to tell you a joke (limited at the moment)
+-Ask me to run commands
+-Ask me to open programs
+-Tell me to exit by saying "buzz off" or "hold on" (hold on works better)
+-I can dictate what you say. Just start off by saying "type ..."
+-I can put your computer to sleep (Windows 10 only I think)
+-Ask me to rap
+-Ask me to recite pi
+-Ask me just about any question and I'll answer it with Wolfram Alpha
+-Tell me to "sign into google with authorization ..." and then say the authorization code you entered during setup
+-Tell me to hold on to quit
+
+
+
+Icons made by <a href="https://www.flaticon.com/authors/smartline" title="Smartline">Smartline</a> from <a href="https://www.flaticon.com/"                 title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"                 title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY
